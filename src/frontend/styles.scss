@@ -1,0 +1,63 @@
+@import '~@material/react-top-app-bar/index.scss';
+@import '~@material/react-card/index.scss';
+@import '~@material/react-tab-bar/index.scss';
+@import '~@material/react-tab-scroller/index.scss';
+@import '~@material/react-tab/index.scss';
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.status-card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+
+    & > * {
+        margin-bottom: 16px;
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+.status-header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 16px;
+
+    :first-child {
+        flex: 1;
+    }
+}
+
+.status-badge {
+    font-weight: normal;
+
+    &.status-healthy,
+    &.status-online {
+        color: #4caf50;
+    }
+
+    &.status-offline,
+    &.status-unhealthy {
+        color: #f44336;
+    }
+}
+
+.status-card-body {
+    padding: 0 16px 16px;
+}
+
+.node-configuration {
+    p {
+        display: flex;
+        flex-direction: row;
+    }
+
+    label {
+        font-weight: bold;
+        flex: 1;
+    }
+}
